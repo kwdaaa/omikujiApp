@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="omikujiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Vf3-la-UGG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omikuji_head" translatesAutoresizingMaskIntoConstraints="NO" id="Wrr-yh-SKV">
+                                <rect key="frame" x="110.5" y="364" width="193" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="K1A-IA-Zug"/>
+                                    <constraint firstAttribute="height" constant="37" id="LLa-ca-bgd"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYJ-f4-hH7" userLabel="Stick View">
+                                <rect key="frame" x="186" y="236" width="42" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omikuji_stick" translatesAutoresizingMaskIntoConstraints="NO" id="yzR-Oh-ymM">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大吉" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2u-S2-O94" userLabel="Stick Label">
+                                        <rect key="frame" x="12" y="0.0" width="18" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="mlm-qB-km3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yzR-Oh-ymM" secondAttribute="trailing" id="4Tb-pw-sLr"/>
+                                    <constraint firstItem="k2u-S2-O94" firstAttribute="top" secondItem="qYJ-f4-hH7" secondAttribute="top" id="LBm-3J-Hif"/>
+                                    <constraint firstAttribute="width" constant="42" id="UCS-iL-P9m"/>
+                                    <constraint firstItem="yzR-Oh-ymM" firstAttribute="top" secondItem="qYJ-f4-hH7" secondAttribute="top" id="YPg-V2-pd1"/>
+                                    <constraint firstAttribute="bottom" secondItem="k2u-S2-O94" secondAttribute="bottom" id="fGc-d1-On6"/>
+                                    <constraint firstItem="k2u-S2-O94" firstAttribute="centerX" secondItem="qYJ-f4-hH7" secondAttribute="centerX" id="gIO-PD-UOU"/>
+                                    <constraint firstAttribute="height" constant="128" id="jeD-Ff-Ec9"/>
+                                    <constraint firstAttribute="bottom" secondItem="yzR-Oh-ymM" secondAttribute="bottom" id="p1j-TA-CfZ"/>
+                                    <constraint firstItem="yzR-Oh-ymM" firstAttribute="leading" secondItem="qYJ-f4-hH7" secondAttribute="leading" id="rqA-9o-IHy"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omikuji_body" translatesAutoresizingMaskIntoConstraints="NO" id="Che-Uk-1ii">
+                                <rect key="frame" x="110.5" y="52" width="193" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="Hf4-3n-nC2"/>
+                                    <constraint firstAttribute="height" constant="312" id="Mwq-w5-jSk"/>
+                                </constraints>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXa-x5-LOa" userLabel="Over View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e7-Js-Zt1" userLabel="Big Label">
+                                        <rect key="frame" x="0.0" y="110" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="90a-ca-dr4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="72"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-S6-JJv">
+                                        <rect key="frame" x="147" y="427" width="120" height="42"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="e7M-Lp-4Zd"/>
+                                            <constraint firstAttribute="width" constant="120" id="ncp-ss-Xme"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="もう一度ひく">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapRetryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ja-ek-Lwb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4e7-Js-Zt1" firstAttribute="leading" secondItem="bXa-x5-LOa" secondAttribute="leading" id="OqB-DW-nrc"/>
+                                    <constraint firstItem="ghL-S6-JJv" firstAttribute="centerY" secondItem="bXa-x5-LOa" secondAttribute="centerY" id="PsB-Kl-pjB"/>
+                                    <constraint firstItem="4e7-Js-Zt1" firstAttribute="top" secondItem="bXa-x5-LOa" secondAttribute="top" constant="110" id="g53-bK-xbf"/>
+                                    <constraint firstItem="ghL-S6-JJv" firstAttribute="centerX" secondItem="bXa-x5-LOa" secondAttribute="centerX" id="i3l-h5-n7Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="4e7-Js-Zt1" secondAttribute="trailing" id="lnV-FP-Ykf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bXa-x5-LOa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="26c-PU-Nu7"/>
+                            <constraint firstItem="bXa-x5-LOa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Xz-4n-hfw"/>
+                            <constraint firstAttribute="bottom" secondItem="bXa-x5-LOa" secondAttribute="bottom" id="86B-kf-rPR"/>
+                            <constraint firstItem="Vf3-la-UGG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8PL-h2-4xa"/>
+                            <constraint firstItem="Che-Uk-1ii" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C9q-WC-C9S"/>
+                            <constraint firstItem="qYJ-f4-hH7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GHI-1Y-wQK"/>
+                            <constraint firstItem="Wrr-yh-SKV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TuE-R2-YZX"/>
+                            <constraint firstAttribute="bottom" secondItem="Vf3-la-UGG" secondAttribute="bottom" id="UAn-pu-3qq"/>
+                            <constraint firstItem="bXa-x5-LOa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UcL-CH-Ihh"/>
+                            <constraint firstItem="Vf3-la-UGG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y0D-yX-h6p"/>
+                            <constraint firstItem="Wrr-yh-SKV" firstAttribute="top" secondItem="Che-Uk-1ii" secondAttribute="bottom" id="Z3Y-NG-JwG"/>
+                            <constraint firstItem="Che-Uk-1ii" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="g9u-A4-0KC"/>
+                            <constraint firstItem="Vf3-la-UGG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jia-zb-98f"/>
+                            <constraint firstItem="Wrr-yh-SKV" firstAttribute="top" secondItem="qYJ-f4-hH7" secondAttribute="bottom" id="rKM-E1-4tv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bigLabel" destination="4e7-Js-Zt1" id="cCF-AL-Zcb"/>
+                        <outlet property="overView" destination="qYJ-f4-hH7" id="2lu-J5-vIc"/>
+                        <outlet property="stickBottomMargin" destination="rKM-E1-4tv" id="CzA-u0-erz"/>
+                        <outlet property="stickHeight" destination="jeD-Ff-Ec9" id="nRi-ve-cy4"/>
+                        <outlet property="stickLabel" destination="k2u-S2-O94" id="RcE-En-rZv"/>
+                        <outlet property="stickView" destination="qYJ-f4-hH7" id="72y-k2-pJG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1024" height="628"/>
+        <image name="omikuji_body" width="1899" height="3074"/>
+        <image name="omikuji_head" width="1906" height="370"/>
+        <image name="omikuji_stick" width="247" height="757"/>
+    </resources>
+</document>
